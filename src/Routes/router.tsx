@@ -11,6 +11,7 @@ import { ForgotPassword } from "../pages/auth/Forgot Password/ForgotPassword";
 import { ResetPassword } from "../pages/auth/ResetPassword/ResetPassword";
 import Sentimento from "../pages/app/Categories/Sentimento/Sentimento";
 import Diversao from "../pages/app/Categories/Diversao/Diversao";
+import Routine from "../pages/app/Categories/Routine/Routine";
 
 export const router = createBrowserRouter([
   { path: "/", element: <Splash /> },
@@ -31,6 +32,7 @@ export const router = createBrowserRouter([
           { path: "categories/:categoryId/actions", element: <Actions /> },
           { path: "categories/sentimento/actions", element: <Sentimento /> },
           { path: "categories/diversao/actions", element: <Diversao /> },
+          { path: "categories/routine/actions", element: <Rotina /> }
         ],
       },
     ],
